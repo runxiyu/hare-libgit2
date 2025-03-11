@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -eux
+
+cd "${BASH_SOURCE[0]%/*}/.."
+make docs
+rsync --delete-after -rP docs/libgit2/ me@runxiyu.org:/var/www/docs/hare/libgit2
