@@ -7,3 +7,6 @@ export type object_t = enum {
 	OBJECT_BLOB =     3, // A file revision object.
 	OBJECT_TAG =      4, // An annotated tag object.
 };
+
+// Representation of an existing git repository, including all its object contents
+export type repository = opaque;

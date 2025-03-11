@@ -3,7 +3,8 @@
 This is a set of bindings for [libgit2](https://libgit2.org/).
 
 Most symbols correspond to the libgit2 API directly with the `git_`/`GIT_`
-prefix removed.
+prefix removed. Where possible, string parameters are accepted as `str` and are
+converted to NUL-terminated strings automatically.
 
 ## Building and linking
 
